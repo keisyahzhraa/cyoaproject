@@ -229,76 +229,82 @@ const storyOne: StoryPack = {
 };
 
 const storyTwoVocab: VocabItem[] = [
-  {
-    word: "Merenung",
-    meaning: "Berpikir dengan sungguh-sungguh.",
-  },
-  {
-    word: "Mengabaikan",
-    meaning: "Tidak mempedulikan sesuatu.",
-  },
-  {
-    word: "Bersalah",
-    meaning: "Merasa telah melakukan kesalahan.",
-  },
-  {
-    word: "Kebingungan",
-    meaning: "Keadaan tidak tahu harus berbuat apa.",
-  },
-  {
-    word: "Menghampiri",
-    meaning: "Datang mendekati seseorang.",
-  },
+  { word: "Penyerang", meaning: "Orang yang menyerang; pemain depan dalam permainan sepak bola." },
+  { word: "Penjaga", meaning: "Orang yang menjaga keselamatan atau keamanan; pengawal." },
+  { word: "Lincah", meaning: "Selalu bergerak; aktif dan gesit; tidak dapat diam." },
+  { word: "Mengarahkan", meaning: "Menunjukkan arah; membimbing ke suatu jalan yang baik." },
+  { word: "Lamban", meaning: "Tidak cekatan; lambat dalam gerakan atau kerja." },
+  { word: "Ekspresi", meaning: "Pengungkapan perasaan atau gagasan; pandangan air muka yang memperlihatkan perasaan." },
+  { word: "Menyaksikan", meaning: "Melihat sendiri dengan mata kepala sendiri suatu peristiwa; menonton." },
+  { word: "Naungan", meaning: "Tempat berlindung; perlindungan." },
+  { word: "Pendapat", meaning: "Pikiran; anggapan; buah pemikiran tentang suatu hal." },
+  { word: "Tertunduk", meaning: "Dalam keadaan menunduk tentang kepala atau pandangan." },
+  { word: "Patah semangat", meaning: "Hilang keberaniannya; putus asa." },
+  { word: "Beranjak", meaning: "Beralih tempat; bergerak sedikit; mulai berbuat sesuatu." },
+  { word: "Menggertak", meaning: "Menakut-nakuti dengan suara atau kata-kata keras; mengancam." },
+  { word: "Menghiraukan", meaning: "Memedulikan; memperhatikan; mengindahkan." },
+  { word: "Termenung", meaning: "Diam berpikir-pikir karena sedih atau susah." },
+  { word: "Kasar", meaning: "Tidak halus; tidak sopan; agak keras tentang perbuatan atau perkataan." },
+  { word: "Meminta", meaning: "Berkata-kata supaya diberi atau mendapat sesuatu; memohon." },
+  { word: "Mengakui", meaning: "Menyatakan sah atau benar; membenarkan tentang kesalahan." },
+  { word: "Kemampuan", meaning: "Kesanggupan; kecakapan; kekuatan." },
+  { word: "Berharga", meaning: "Mempunyai harga; bernilai; mempunyai mutu yang tinggi; penting." },
+  { word: "Handal", meaning: "Bentuk tidak baku dari andal: dapat dipercaya; memberikan hasil yang sama pada ujian berulang." },
+  { word: "Berselang", meaning: "Ada jaraknya atau antaranya; berantara." },
+  { word: "Kekeliruan", meaning: "Kesalahan; kekhilafan; hal-hal yang keliru." },
+  { word: "Mengurungkan", meaning: "Menjadikan urung atau tidak jadi; membatalkan." },
+  { word: "Wasit", meaning: "Pemimpin pertandingan; penengah; pelerai antara yang bertengkar." },
+  { word: "Adil", meaning: "Tidak berat sebelah; tidak memihak; berpegang pada kebenaran." },
 ];
 
 const storyTwoQuiz: QuizItem[] = [
   {
-    question: "Apa arti kata 'merenung'?",
+    question: "Apa arti kata 'penyerang' dalam permainan sepak bola?",
     options: [
-      "Bermain bersama",
-      "Berpikir sungguh-sungguh",
-      "Berlari cepat",
-      "Berteriak marah",
+      "Penjaga gawang",
+      "Pemain depan yang menyerang",
+      "Pemain belakang",
+      "Wasit pertandingan",
     ],
     answer: 1,
   },
   {
-    question: "Apa arti 'mengabaikan'?",
+    question: "Apa arti kata 'wasit'?",
     options: [
-      "Membantu",
-      "Mengingat",
-      "Tidak peduli",
-      "Memanggil",
+      "Pemain depan",
+      "Penonton pertandingan",
+      "Pemimpin pertandingan",
+      "Pelatih tim",
     ],
     answer: 2,
   },
   {
-    question: "Apa arti kata 'bersalah'?",
+    question: "Apa arti kata 'lincah'?",
     options: [
-      "Senang",
-      "Takut",
-      "Merasa melakukan kesalahan",
-      "Bingung",
+      "Lambat dan malas",
+      "Diam dan tenang",
+      "Aktif dan gesit",
+      "Kasar dan keras",
     ],
     answer: 2,
   },
   {
-    question: "Apa arti 'kebingungan'?",
+    question: "Apa arti kata 'adil'?",
     options: [
-      "Tidak tahu harus berbuat apa",
-      "Bersemangat",
-      "Marah",
-      "Tertawa",
+      "Memihak salah satu",
+      "Tidak berat sebelah dan berpegang pada kebenaran",
+      "Marah dan kasar",
+      "Diam dan tidak peduli",
     ],
-    answer: 0,
+    answer: 1,
   },
   {
-    question: "Apa arti 'menghampiri'?",
+    question: "Apa arti kata 'patah semangat'?",
     options: [
-      "Meninggalkan",
-      "Mendekati",
-      "Menghindari",
-      "Melompat",
+      "Semakin bersemangat",
+      "Hilang keberaniannya; putus asa",
+      "Berlari kencang",
+      "Meminta bantuan",
     ],
     answer: 1,
   },
@@ -323,54 +329,48 @@ const storyTwo: StoryPack = {
       vocab: storyTwoVocab,
       choices: [
         {
-          text:
-            "a. Tetap bermain dan menolak Ojan masuk tim",
+          text: "a. Tetap bermain dan menolak Ojan masuk tim",
           next: "scene2a",
         },
         {
-          text:
-            "b. Keluar dari tim agar Ojan bisa bermain",
+          text: "b. Keluar dari tim agar Ojan bisa bermain",
           next: "scene2b",
         },
       ],
     },
 
     scene2a: {
-      title: "Herdi Mulai Merenung",
+      title: "Herdi Mulai Termenung",
       image: "/comics/story2/scene2a.png",
       description:
-        "Herdi melihat Ojan duduk sendirian. Ia bingung menyikapi teman-temannya.",
+        "Herdi menyaksikan Ojan duduk sendirian dengan ekspresi sedih. Ia mulai termenung memikirkan pendapatnya tentang situasi ini.",
       vocab: storyTwoVocab,
       choices: [
         {
-          text:
-            "a. Mengabaikan Ojan dan tetap bermain",
+          text: "a. Tidak menghiraukan Ojan dan tetap bermain",
           next: "badA",
         },
         {
-          text:
-            "b. Menghampiri Ojan dan meminta maaf",
+          text: "b. Beranjak menghampiri Ojan dan meminta maaf",
           next: "goodA",
         },
       ],
     },
 
     badA: {
-      title:
-        "Ojan pulang dengan sedih. Herdi menyesal telah mengabaikan temannya.",
+      title: "Ojan pulang dengan sedih. Herdi menyesal telah tidak menghiraukan temannya.",
       image: "/comics/story2/ending-bad1.png",
       summary:
-        "Mengabaikan perasaan teman bisa membuat orang lain terluka. Kita harus belajar peduli kepada sesama.",
+        "Tidak menghiraukan perasaan teman bisa membuat orang lain patah semangat. Kita harus belajar peduli kepada sesama.",
       vocab: storyTwoVocab,
       choices: [],
     },
 
     goodA: {
-      title:
-        "Ojan memaafkan Herdi. Mereka bermain bersama dengan gembira.",
+      title: "Ojan memaafkan Herdi. Mereka bermain bersama dengan gembira.",
       image: "/comics/story2/ending-good1.png",
       summary:
-        "Meminta maaf adalah sikap berani. Kepedulian membuat persahabatan semakin kuat.",
+        "Mengakui kesalahan dan meminta maaf adalah sikap berani dan berharga. Kepedulian membuat persahabatan semakin kuat.",
       vocab: storyTwoVocab,
       choices: [],
     },
@@ -379,38 +379,34 @@ const storyTwo: StoryPack = {
       title: "Herdi Mengalah",
       image: "/comics/story2/scene2b.png",
       description:
-        "Herdi duduk di bangku penonton. Namun teman-temannya terlihat kebingungan.",
+        "Herdi duduk di bangku penonton. Namun teman-temannya terlihat lamban dan kebingungan karena kehilangan penyerang andalan.",
       vocab: storyTwoVocab,
       choices: [
         {
-          text:
-            "a. Tetap diam dan membiarkan tim kebingungan",
+          text: "a. Tetap diam dan membiarkan tim kebingungan",
           next: "badB",
         },
         {
-          text:
-            "b. Menghampiri teman-teman untuk membantu",
+          text: "b. Beranjak menghampiri teman-teman untuk mengarahkan",
           next: "goodB",
         },
       ],
     },
 
     badB: {
-      title:
-        "Tim bermain kacau karena tidak saling bekerja sama.",
+      title: "Tim bermain kacau karena tidak saling bekerja sama.",
       image: "/comics/story2/ending-bad2.png",
       summary:
-        "Mengalah saja tidak cukup. Kita juga perlu berkomunikasi agar masalah bisa selesai.",
+        "Mengalah saja tidak cukup. Kita juga perlu mengarahkan dan berkomunikasi agar masalah bisa selesai.",
       vocab: storyTwoVocab,
       choices: [],
     },
 
     goodB: {
-      title:
-        "Herdi membantu menjelaskan situasi. Tim kembali kompak dan bermain bersama.",
+      title: "Herdi mengarahkan situasi. Tim kembali lincah dan kompak bermain bersama.",
       image: "/comics/story2/ending-good2.png",
       summary:
-        "Kerja sama dan komunikasi membuat masalah lebih mudah diselesaikan.",
+        "Kemampuan mengarahkan dan bekerja sama membuat masalah lebih mudah diselesaikan. Wasit pun mengakui permainan mereka adil dan sportif.",
       vocab: storyTwoVocab,
       choices: [],
     },
