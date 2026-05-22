@@ -1,5 +1,4 @@
 "use client";
-
 import { Plus_Jakarta_Sans } from "next/font/google";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
@@ -14,20 +13,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-
   const isStoryPage = pathname?.startsWith("/story/");
 
   return (
     <html lang="id">
+      <head>
+        <link rel="icon" href="/icon.png" type="image/png" />
+        <link rel="shortcut icon" href="/icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+      </head>
       <body
         className={`${font.className} bg-[#F8FAFC] text-slate-800 antialiased selection:bg-[#22c55e]/10`}
       >
         {!isStoryPage && <Navbar />}
-
         <main className="pt-24 md:pt-32 flex flex-col">
           {children}
         </main>
-
         {!isStoryPage && <Footer />}
       </body>
     </html>
@@ -80,7 +81,6 @@ function Navbar() {
         <div className="hidden md:flex items-center gap-2">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
-
             return (
               <Link
                 key={item.name}
@@ -93,7 +93,6 @@ function Navbar() {
                   }
                 `}
               >
-                {/* ACTIVE / HOVER BACKGROUND */}
                 <span
                   className={`absolute inset-0 bg-[#fbbf24] transition-transform duration-300 ease-out
                     ${
@@ -103,8 +102,6 @@ function Navbar() {
                     }
                   `}
                 />
-
-                {/* TEXT */}
                 <span className="relative z-10">
                   {item.name}
                 </span>
@@ -127,7 +124,6 @@ function Navbar() {
             <div className="bg-white border border-slate-200 shadow-2xl rounded-3xl p-6 pt-20 flex flex-col gap-3">
               {navItems.map((item) => {
                 const isActive = pathname === item.href;
-
                 return (
                   <Link
                     key={item.name}
@@ -159,7 +155,7 @@ function Footer() {
     <footer className="bg-[#f0fdf4] border-t border-green-100 pt-6 text-slate-600 font-medium">
       <div className="max-w-6xl mx-auto px-6 md:px-8 py-10 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center md:text-left">
-          
+
           {/* LOGO + DESC */}
           <div className="flex flex-col items-center md:items-start space-y-4">
             <Link href="/" className="flex justify-center md:justify-start">
@@ -169,7 +165,6 @@ function Footer() {
                 className="h-14 md:h-16 w-auto object-contain"
               />
             </Link>
-
             <p className="text-slate-500 text-sm leading-relaxed max-w-xs">
               Meningkatkan pemahaman kosakata dan literasi anak kelas 4 SD
               melalui cerita petualangan interaktif.
@@ -181,7 +176,6 @@ function Footer() {
             <span className="font-bold text-[#22c55e] uppercase tracking-widest text-[10px]">
               Eksplorasi
             </span>
-
             <Link href="/cerita" className="hover:text-[#92400e] transition-colors">
               Mulai Baca
             </Link>
@@ -192,15 +186,12 @@ function Footer() {
             <span className="font-bold text-[#22c55e] uppercase tracking-widest text-[10px]">
               Dukungan
             </span>
-
             <Link href="/tentang" className="hover:text-[#92400e] transition-colors">
               Tentang Kami
             </Link>
           </div>
-
         </div>
       </div>
-
       <div className="bg-green-100/50 py-4 text-center border-t border-green-200/30">
         <p className="text-[10px] uppercase tracking-[0.2em] font-semibold text-green-700/70">
           © IPB 1 • Amartha Project • 2026

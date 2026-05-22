@@ -72,32 +72,17 @@ export const quiz: QuizItem[] = [
   },
   {
     question: "Siapakah turis?",
-    options: [
-      "Penjaga laut",
-      "Pelancong",
-      "Guru",
-      "Nelayan",
-    ],
+    options: ["Penjaga laut", "Pelancong", "Guru", "Nelayan"],
     answer: 1,
   },
   {
     question: "Apa arti flora?",
-    options: [
-      "Tumbuhan",
-      "Hewan",
-      "Pulau",
-      "Wisata",
-    ],
+    options: ["Tumbuhan", "Hewan", "Pulau", "Wisata"],
     answer: 0,
   },
   {
     question: "Apa arti fauna?",
-    options: [
-      "Bunga",
-      "Hewan",
-      "Tanah",
-      "Air",
-    ],
+    options: ["Bunga", "Hewan", "Tanah", "Air"],
     answer: 1,
   },
   {
@@ -154,20 +139,19 @@ const storyOne: StoryPack = {
       vocab: sharedVocab,
       choices: [
         {
-          text:
-            "a. Mengingatkan turis dengan sopan agar menjaga flora",
+          text: "a. Mengingatkan turis dengan sopan agar menjaga flora",
           next: "forestGood",
         },
         {
-          text:
-            "b. Diam saja karena takut menegur turis",
+          text: "b. Diam saja karena takut menegur turis",
           next: "forestBad",
         },
       ],
     },
 
     forestGood: {
-      title: "Turis meminta maaf dan tidak jadi memetik bunga. Anak-anak berhasil menjaga flora dan biota Raja Ampat.",
+      title:
+        "Turis meminta maaf dan tidak jadi memetik bunga. Anak-anak berhasil menjaga flora dan biota Raja Ampat.",
       image: "/comics/story1/ending-good.png",
       summary:
         "Menjaga flora dan seluruh biota adalah tanggung jawab bersama. Keberanian untuk peduli dan mengingatkan dengan sopan dapat menjaga keindahan alam agar tetap lestari bagi generasi mendatang.",
@@ -176,7 +160,8 @@ const storyOne: StoryPack = {
     },
 
     forestBad: {
-      title: "Turis memetik anggrek langka. Anak-anak menyesal karena tidak menjaga flora.",
+      title:
+        "Turis memetik anggrek langka. Anak-anak menyesal karena tidak menjaga flora.",
       image: "/comics/story1/ending-bad.png",
       summary:
         "Diam saat melihat kerusakan flora dapat merugikan fauna dan seluruh biota. Keberanian menjaga alam adalah tanggung jawab semua orang.",
@@ -191,25 +176,23 @@ const storyOne: StoryPack = {
     sea2: {
       title: "Hiu Berjalan Raja Ampat",
       image: "/comics/story1/scene2b.png",
-      description:
-        "Anak-anak melihat fauna langka: hiu berjalan.",
+      description: "Anak-anak melihat fauna langka: hiu berjalan.",
       vocab: sharedVocab,
       choices: [
         {
-          text:
-            "a. Mengingatkan turis agar mengambil kembali sampahnya",
+          text: "a. Mengingatkan turis agar mengambil kembali sampahnya",
           next: "seaGood",
         },
         {
-          text:
-            "b. Membiarkan saja karena takut menegur turis",
+          text: "b. Membiarkan saja karena takut menegur turis",
           next: "seaBad",
         },
       ],
     },
 
     seaGood: {
-      title: "Hiu berjalan tetap nyaman. Anak-anak belajar menghormati fauna dan habitatnya.",
+      title:
+        "Hiu berjalan tetap nyaman. Anak-anak belajar menghormati fauna dan habitatnya.",
       image: "/comics/story1/ending-sea-good.png",
       summary:
         "Berani menegur dengan sopan dapat menjaga fauna dan biota tetap lestari. Kepedulian kecil bisa memberi dampak besar bagi alam.",
@@ -218,7 +201,8 @@ const storyOne: StoryPack = {
     },
 
     seaBad: {
-      title: "Hiu berjalan kabur ketakutan. Anak-anak belajar bahwa fauna tidak boleh diganggu.",
+      title:
+        "Hiu berjalan kabur ketakutan. Anak-anak belajar bahwa fauna tidak boleh diganggu.",
       image: "/comics/story1/ending-sea-bad.png",
       summary:
         "Diam saat melihat kerusakan alam bisa membawa akibat buruk. Menjaga fauna dan biota harus dimulai dari keberanian bertindak benar.",
@@ -229,32 +213,102 @@ const storyOne: StoryPack = {
 };
 
 const storyTwoVocab: VocabItem[] = [
-  { word: "Penyerang", meaning: "Orang yang menyerang; pemain depan dalam permainan sepak bola." },
-  { word: "Penjaga", meaning: "Orang yang menjaga keselamatan atau keamanan; pengawal." },
-  { word: "Lincah", meaning: "Selalu bergerak; aktif dan gesit; tidak dapat diam." },
-  { word: "Mengarahkan", meaning: "Menunjukkan arah; membimbing ke suatu jalan yang baik." },
-  { word: "Lamban", meaning: "Tidak cekatan; lambat dalam gerakan atau kerja." },
-  { word: "Ekspresi", meaning: "Pengungkapan perasaan atau gagasan; pandangan air muka yang memperlihatkan perasaan." },
-  { word: "Menyaksikan", meaning: "Melihat sendiri dengan mata kepala sendiri suatu peristiwa; menonton." },
+  {
+    word: "Penyerang",
+    meaning: "Orang yang menyerang; pemain depan dalam permainan sepak bola.",
+  },
+  {
+    word: "Penjaga",
+    meaning: "Orang yang menjaga keselamatan atau keamanan; pengawal.",
+  },
+  {
+    word: "Lincah",
+    meaning: "Selalu bergerak; aktif dan gesit; tidak dapat diam.",
+  },
+  {
+    word: "Mengarahkan",
+    meaning: "Menunjukkan arah; membimbing ke suatu jalan yang baik.",
+  },
+  {
+    word: "Lamban",
+    meaning: "Tidak cekatan; lambat dalam gerakan atau kerja.",
+  },
+  {
+    word: "Ekspresi",
+    meaning:
+      "Pengungkapan perasaan atau gagasan; pandangan air muka yang memperlihatkan perasaan.",
+  },
+  {
+    word: "Menyaksikan",
+    meaning:
+      "Melihat sendiri dengan mata kepala sendiri suatu peristiwa; menonton.",
+  },
   { word: "Naungan", meaning: "Tempat berlindung; perlindungan." },
-  { word: "Pendapat", meaning: "Pikiran; anggapan; buah pemikiran tentang suatu hal." },
-  { word: "Tertunduk", meaning: "Dalam keadaan menunduk tentang kepala atau pandangan." },
+  {
+    word: "Pendapat",
+    meaning: "Pikiran; anggapan; buah pemikiran tentang suatu hal.",
+  },
+  {
+    word: "Tertunduk",
+    meaning: "Dalam keadaan menunduk tentang kepala atau pandangan.",
+  },
   { word: "Patah semangat", meaning: "Hilang keberaniannya; putus asa." },
-  { word: "Beranjak", meaning: "Beralih tempat; bergerak sedikit; mulai berbuat sesuatu." },
-  { word: "Menggertak", meaning: "Menakut-nakuti dengan suara atau kata-kata keras; mengancam." },
-  { word: "Menghiraukan", meaning: "Memedulikan; memperhatikan; mengindahkan." },
-  { word: "Termenung", meaning: "Diam berpikir-pikir karena sedih atau susah." },
-  { word: "Kasar", meaning: "Tidak halus; tidak sopan; agak keras tentang perbuatan atau perkataan." },
-  { word: "Meminta", meaning: "Berkata-kata supaya diberi atau mendapat sesuatu; memohon." },
-  { word: "Mengakui", meaning: "Menyatakan sah atau benar; membenarkan tentang kesalahan." },
+  {
+    word: "Beranjak",
+    meaning: "Beralih tempat; bergerak sedikit; mulai berbuat sesuatu.",
+  },
+  {
+    word: "Menggertak",
+    meaning: "Menakut-nakuti dengan suara atau kata-kata keras; mengancam.",
+  },
+  {
+    word: "Menghiraukan",
+    meaning: "Memedulikan; memperhatikan; mengindahkan.",
+  },
+  {
+    word: "Termenung",
+    meaning: "Diam berpikir-pikir karena sedih atau susah.",
+  },
+  {
+    word: "Kasar",
+    meaning:
+      "Tidak halus; tidak sopan; agak keras tentang perbuatan atau perkataan.",
+  },
+  {
+    word: "Meminta",
+    meaning: "Berkata-kata supaya diberi atau mendapat sesuatu; memohon.",
+  },
+  {
+    word: "Mengakui",
+    meaning: "Menyatakan sah atau benar; membenarkan tentang kesalahan.",
+  },
   { word: "Kemampuan", meaning: "Kesanggupan; kecakapan; kekuatan." },
-  { word: "Berharga", meaning: "Mempunyai harga; bernilai; mempunyai mutu yang tinggi; penting." },
-  { word: "Handal", meaning: "Bentuk tidak baku dari andal: dapat dipercaya; memberikan hasil yang sama pada ujian berulang." },
+  {
+    word: "Berharga",
+    meaning: "Mempunyai harga; bernilai; mempunyai mutu yang tinggi; penting.",
+  },
+  {
+    word: "Handal",
+    meaning:
+      "Bentuk tidak baku dari andal: dapat dipercaya; memberikan hasil yang sama pada ujian berulang.",
+  },
   { word: "Berselang", meaning: "Ada jaraknya atau antaranya; berantara." },
-  { word: "Kekeliruan", meaning: "Kesalahan; kekhilafan; hal-hal yang keliru." },
-  { word: "Mengurungkan", meaning: "Menjadikan urung atau tidak jadi; membatalkan." },
-  { word: "Wasit", meaning: "Pemimpin pertandingan; penengah; pelerai antara yang bertengkar." },
-  { word: "Adil", meaning: "Tidak berat sebelah; tidak memihak; berpegang pada kebenaran." },
+  {
+    word: "Kekeliruan",
+    meaning: "Kesalahan; kekhilafan; hal-hal yang keliru.",
+  },
+  {
+    word: "Mengurungkan",
+    meaning: "Menjadikan urung atau tidak jadi; membatalkan.",
+  },
+  {
+    word: "Wasit",
+    meaning: "Pemimpin pertandingan; penengah; pelerai antara yang bertengkar.",
+  },
+  {
+    word: "Adil",
+    meaning: "Tidak berat sebelah; tidak memihak; berpegang pada kebenaran.",
+  },
 ];
 
 const storyTwoQuiz: QuizItem[] = [
@@ -310,7 +364,6 @@ const storyTwoQuiz: QuizItem[] = [
   },
 ];
 
-
 /* =========================================
 STORY 2
 ========================================= */
@@ -358,7 +411,8 @@ const storyTwo: StoryPack = {
     },
 
     badA: {
-      title: "Ojan pulang dengan sedih. Herdi menyesal telah tidak menghiraukan temannya.",
+      title:
+        "Ojan pulang dengan sedih. Herdi menyesal telah tidak menghiraukan temannya.",
       image: "/comics/story2/ending-bad1.png",
       summary:
         "Tidak menghiraukan perasaan teman bisa membuat orang lain patah semangat. Kita harus belajar peduli kepada sesama.",
@@ -403,7 +457,8 @@ const storyTwo: StoryPack = {
     },
 
     goodB: {
-      title: "Herdi mengarahkan situasi. Tim kembali lincah dan kompak bermain bersama.",
+      title:
+        "Herdi mengarahkan situasi. Tim kembali lincah dan kompak bermain bersama.",
       image: "/comics/story2/ending-good2.png",
       summary:
         "Kemampuan mengarahkan dan bekerja sama membuat masalah lebih mudah diselesaikan. Wasit pun mengakui permainan mereka adil dan sportif.",
@@ -568,8 +623,7 @@ const storyThree: StoryPack = {
     },
 
     riverBad: {
-      title:
-        "Sampah menumpuk dan merusak panorama sungai.",
+      title: "Sampah menumpuk dan merusak panorama sungai.",
       image: "/comics/story3/ending-bad1.png",
       summary:
         "Membiarkan sampah dapat merusak keindahan alam. Kita harus peduli pada lingkungan sekitar.",
@@ -600,18 +654,15 @@ const storyThree: StoryPack = {
     },
 
     marketGood: {
-      title:
-        "Bu Rina mengizinkan mereka membeli jajanan dengan tertib.",
+      title: "Bu Rina mengizinkan mereka membeli jajanan dengan tertib.",
       image: "/comics/story3/ending-good2.png",
-      summary:
-        "Meminta izin menunjukkan sikap sopan dan bertanggung jawab.",
+      summary: "Meminta izin menunjukkan sikap sopan dan bertanggung jawab.",
       vocab: storyThreeVocab,
       choices: [],
     },
 
     marketBad: {
-      title:
-        "Anak-anak tersesat di keramaian pasar karena pergi tanpa izin.",
+      title: "Anak-anak tersesat di keramaian pasar karena pergi tanpa izin.",
       image: "/comics/story3/ending-bad2.png",
       summary:
         "Pergi tanpa izin dapat membahayakan diri sendiri. Selalu beri tahu guru atau orang tua.",
@@ -638,13 +689,11 @@ const storyFourVocab: VocabItem[] = [
   },
   {
     word: "Generasi",
-    meaning:
-      "Sekelompok orang yang hidup pada masa yang sama.",
+    meaning: "Sekelompok orang yang hidup pada masa yang sama.",
   },
   {
     word: "Mitigasi",
-    meaning:
-      "Upaya untuk mengurangi risiko dan dampak bencana.",
+    meaning: "Upaya untuk mengurangi risiko dan dampak bencana.",
   },
 ];
 
@@ -661,22 +710,12 @@ const storyFourQuiz: QuizItem[] = [
   },
   {
     question: "Apa arti erosi?",
-    options: [
-      "Pengikisan tanah",
-      "Menanam pohon",
-      "Musim hujan",
-      "Permainan",
-    ],
+    options: ["Pengikisan tanah", "Menanam pohon", "Musim hujan", "Permainan"],
     answer: 0,
   },
   {
     question: "Apa arti generasi?",
-    options: [
-      "Kelompok orang pada masa sama",
-      "Bencana",
-      "Tanah",
-      "Air",
-    ],
+    options: ["Kelompok orang pada masa sama", "Bencana", "Tanah", "Air"],
     answer: 0,
   },
   {
@@ -737,18 +776,15 @@ const storyFour: StoryPack = {
     scene4: {
       title: "Mulai Petualangan",
       image: "/comics/story4/scene4.png",
-      description:
-        "Hari ini Jati memilih tempat belajar mitigasi.",
+      description: "Hari ini Jati memilih tempat belajar mitigasi.",
       vocab: storyFourVocab,
       choices: [
         {
-          text:
-            "Ayo masuk ke Balai Desa dan bermain tebak gambar bersama Jati dan teman-teman!",
+          text: "Ayo masuk ke Balai Desa dan bermain tebak gambar bersama Jati dan teman-teman!",
           next: "scene5A",
         },
         {
-          text:
-            "Ayo ikut Pak Kades dan para petani ke kebun bibit!",
+          text: "Ayo ikut Pak Kades dan para petani ke kebun bibit!",
           next: "scene5B",
         },
       ],
@@ -759,8 +795,7 @@ const storyFour: StoryPack = {
     scene5A: {
       title: "Balai Desa",
       image: "/comics/story4/scene5A.png",
-      description:
-        "Anak-anak belajar mitigasi melalui permainan.",
+      description: "Anak-anak belajar mitigasi melalui permainan.",
       vocab: storyFourVocab,
       choices: [{ text: "Lanjut", next: "scene6A" }],
     },
@@ -804,13 +839,11 @@ const storyFour: StoryPack = {
       vocab: storyFourVocab,
       choices: [
         {
-          text:
-            "AA. Tetap di dalam dan amankan buku",
+          text: "AA. Tetap di dalam dan amankan buku",
           next: "bad1",
         },
         {
-          text:
-            "AB. Evakuasi ke bukit batu",
+          text: "AB. Evakuasi ke bukit batu",
           next: "scene12",
         },
       ],
@@ -821,8 +854,7 @@ const storyFour: StoryPack = {
     scene5B: {
       title: "Kebun Bibit",
       image: "/comics/story4/scene5B.png",
-      description:
-        "Pak Tani mengajari menjaga tanah.",
+      description: "Pak Tani mengajari menjaga tanah.",
       vocab: storyFourVocab,
       choices: [{ text: "Lanjut", next: "scene6B" }],
     },
@@ -866,13 +898,11 @@ const storyFour: StoryPack = {
       vocab: storyFourVocab,
       choices: [
         {
-          text:
-            "a. Menumpuk karung pasir",
+          text: "a. Menumpuk karung pasir",
           next: "bad2",
         },
         {
-          text:
-            "b. Mundur ke pemukiman",
+          text: "b. Mundur ke pemukiman",
           next: "scene12",
         },
       ],
@@ -883,8 +913,7 @@ const storyFour: StoryPack = {
     bad1: {
       title: "Anak-anak terlambat evakuasi.",
       image: "/comics/story4/bad1.png",
-      summary:
-        "Mitigasi berarti bertindak cepat demi keselamatan.",
+      summary: "Mitigasi berarti bertindak cepat demi keselamatan.",
       vocab: storyFourVocab,
       choices: [],
     },
@@ -892,8 +921,7 @@ const storyFour: StoryPack = {
     bad2: {
       title: "Karung pasir tak cukup menahan longsor.",
       image: "/comics/story4/bad2.png",
-      summary:
-        "Keselamatan manusia lebih penting.",
+      summary: "Keselamatan manusia lebih penting.",
       vocab: storyFourVocab,
       choices: [],
     },
@@ -901,8 +929,7 @@ const storyFour: StoryPack = {
     bad3: {
       title: "Evakuasi kacau dan warga tertinggal.",
       image: "/comics/story4/bad3.png",
-      summary:
-        "Mitigasi butuh kerja sama.",
+      summary: "Mitigasi butuh kerja sama.",
       vocab: storyFourVocab,
       choices: [],
     },
@@ -956,13 +983,11 @@ const storyFour: StoryPack = {
       vocab: storyFourVocab,
       choices: [
         {
-          text:
-            "a. Evakuasi cepat anak-anak duluan",
+          text: "a. Evakuasi cepat anak-anak duluan",
           next: "bad3",
         },
         {
-          text:
-            "b. Evakuasi kompak bersama",
+          text: "b. Evakuasi kompak bersama",
           next: "scene18",
         },
       ],
@@ -1007,40 +1032,33 @@ const storyFour: StoryPack = {
       vocab: storyFourVocab,
       choices: [
         {
-          text:
-            "Menyebarkan Kampanye Hijau ke Luar Desa",
+          text: "Menyebarkan Kampanye Hijau ke Luar Desa",
           next: "good1",
         },
         {
-          text:
-            "Membantu Gerakan Menanam Lokal",
+          text: "Membantu Gerakan Menanam Lokal",
           next: "good2",
         },
       ],
     },
 
     good1: {
-      title:
-        "Desa menjadi inspirasi mitigasi bagi wilayah lain.",
+      title: "Desa menjadi inspirasi mitigasi bagi wilayah lain.",
       image: "/comics/story4/good1.png",
-      summary:
-        "Edukasi lingkungan menjaga generasi masa depan.",
+      summary: "Edukasi lingkungan menjaga generasi masa depan.",
       vocab: storyFourVocab,
       choices: [],
     },
 
     good2: {
-      title:
-        "Desa kembali hijau dan kuat menghadapi hujan.",
+      title: "Desa kembali hijau dan kuat menghadapi hujan.",
       image: "/comics/story4/good2.png",
-      summary:
-        "Menanam pohon adalah mitigasi nyata.",
+      summary: "Menanam pohon adalah mitigasi nyata.",
       vocab: storyFourVocab,
       choices: [],
     },
   },
 };
-
 
 /* =========================================
 EXPORT
