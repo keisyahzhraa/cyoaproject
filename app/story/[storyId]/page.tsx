@@ -146,9 +146,7 @@ export default function StoryPage({ params }: Props) {
                 <ArrowLeft />
               </Link>
 
-              <button
-                onClick={() => setShowVocab(true)}
-              >
+              <button onClick={() => setShowVocab(true)}>
                 <BookOpen />
               </button>
             </div>
@@ -166,7 +164,6 @@ export default function StoryPage({ params }: Props) {
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black mb-3 sm:mb-4">
                   {current.title}
                 </h1>
-
                 <p>{current.description}</p>
               </div>
             </div>
@@ -212,9 +209,7 @@ export default function StoryPage({ params }: Props) {
                   </h2>
 
                   <button
-                    onClick={() =>
-                      setShowSummary(true)
-                    }
+                    onClick={() => setShowSummary(true)}
                     className="bg-green-500 text-white px-8 py-4 rounded-2xl font-bold"
                   >
                     Lihat Kesimpulan
@@ -232,36 +227,26 @@ export default function StoryPage({ params }: Props) {
                   {current.title}
                 </h2>
 
-                <p className="mb-8">
-                  {current.summary}
-                </p>
+                <p className="mb-8">{current.summary}</p>
 
-                {!prepStarted ? (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                    <button
-                      onClick={() =>
-                        setShowVocab(true)
-                      }
-                      className="bg-yellow-100 py-4 rounded-xl font-bold"
-                    >
-                      Kosakata
-                    </button>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                  <button
+                    onClick={() => setShowVocab(true)}
+                    className="bg-yellow-100 py-4 rounded-xl font-bold"
+                  >
+                    Kosakata
+                  </button>
 
-                    <button
-                      onClick={() =>
-                        setPrepStarted(true)
-                      }
-                      className="bg-green-500 text-white py-4 rounded-xl font-bold"
-                    >
-                      Mulai Quiz
-                    </button>
-                  </div>
-                ) : (
-                  <div className="text-4xl font-black text-green-500">
-                    <Timer className="inline mr-2" />
-                    {prepTimer}s
-                  </div>
-                )}
+                  <button
+                    onClick={() => {
+                      setPrepDone(true);
+                      setStartQuiz(true);
+                    }}
+                    className="bg-green-500 text-white py-4 rounded-xl font-bold"
+                  >
+                    Mulai Quiz
+                  </button>
+                </div>
 
                 <button
                   onClick={reset}
@@ -279,10 +264,7 @@ export default function StoryPage({ params }: Props) {
         {startQuiz && !quizDone && (
           <div className="bg-white p-4 sm:p-6 md:p-10 rounded-2xl sm:rounded-3xl shadow">
             <div className="flex justify-between mb-6">
-              <span>
-                {quizIndex + 1}/{story.quiz.length}
-              </span>
-
+              <span>{quizIndex + 1}/{story.quiz.length}</span>
               <span>{quizTimer}s</span>
             </div>
 
@@ -291,17 +273,15 @@ export default function StoryPage({ params }: Props) {
             </h2>
 
             <div className="grid gap-4">
-              {story.quiz[quizIndex].options.map(
-                (o, i) => (
-                  <button
-                    key={i}
-                    onClick={() => answer(i)}
-                    className="p-4 sm:p-5 rounded-xl sm:rounded-2xl border hover:bg-green-50 flex justify-between items-center text-sm sm:text-base"
-                  >
-                    {o}
-                  </button>
-                )
-              )}
+              {story.quiz[quizIndex].options.map((o, i) => (
+                <button
+                  key={i}
+                  onClick={() => answer(i)}
+                  className="p-4 sm:p-5 rounded-xl sm:rounded-2xl border hover:bg-green-50 flex justify-between items-center text-sm sm:text-base"
+                >
+                  {o}
+                </button>
+              ))}
             </div>
           </div>
         )}
@@ -336,25 +316,19 @@ export default function StoryPage({ params }: Props) {
         {showVocab && (
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center">
             <div className="bg-white rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 max-w-lg w-[95%] sm:w-full max-h-[90vh] overflow-y-auto">
-              <h2 className="text-2xl font-black mb-6">
-                Kosakata
-              </h2>
+              <h2 className="text-2xl font-black mb-6">Kosakata</h2>
 
               <div className="space-y-4">
                 {story.vocab.map((item, i) => (
                   <div key={i}>
-                    <h3 className="font-bold">
-                      {item.word}
-                    </h3>
+                    <h3 className="font-bold">{item.word}</h3>
                     <p>{item.meaning}</p>
                   </div>
                 ))}
               </div>
 
               <button
-                onClick={() =>
-                  setShowVocab(false)
-                }
+                onClick={() => setShowVocab(false)}
                 className="mt-6 w-full bg-blue-500 text-white py-4 rounded-xl"
               >
                 Tutup

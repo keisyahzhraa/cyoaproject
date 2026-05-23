@@ -1061,6 +1061,401 @@ const storyFour: StoryPack = {
 };
 
 /* =========================================
+STORY 5
+========================================= */
+
+const storyFiveVocab: VocabItem[] = [
+  {
+    word: "Sinisme",
+    meaning: "Sikap mengejek atau memandang sesuatu secara negatif.",
+  },
+  {
+    word: "Bijaksana",
+    meaning: "Pandai dan baik dalam mengambil keputusan.",
+  },
+  {
+    word: "Relawan Pendidikan",
+    meaning:
+      "Orang yang membantu bidang pendidikan secara sukarela.",
+  },
+  {
+    word: "Tertunggak",
+    meaning:
+      "Belum terselesaikan atau belum dibayar.",
+  },
+  {
+    word: "Potensi",
+    meaning:
+      "Kemampuan yang dapat berkembang.",
+  },
+  {
+    word: "Mengandalkan",
+    meaning:
+      "Percaya dan bergantung pada seseorang.",
+  },
+  {
+    word: "Ketangguhan",
+    meaning:
+      "Kemampuan untuk tetap kuat menghadapi kesulitan.",
+  },
+  {
+    word: "Guncangan",
+    meaning:
+      "Cobaan atau perubahan besar dalam hidup.",
+  },
+  {
+    word: "Magang",
+    meaning:
+      "Belajar sambil bekerja untuk mendapatkan pengalaman.",
+  },
+  {
+    word: "Kesetaraan Paket C",
+    meaning:
+      "Pendidikan setara SMA melalui jalur nonformal.",
+  },
+  {
+    word: "Sesak Napas",
+    meaning:
+      "Sulit bernapas.",
+  },
+  {
+    word: "Terkuras",
+    meaning:
+      "Habis karena terlalu digunakan.",
+  },
+  {
+    word: "Epilog",
+    meaning:
+      "Bagian penutup cerita.",
+  },
+  {
+    word: "Percabangan Cerita",
+    meaning:
+      "Cerita dengan banyak pilihan jalan dan akhir.",
+  },
+  {
+    word: "Harga Diri",
+    meaning:
+      "Perasaan menghargai diri sendiri.",
+  },
+  {
+    word: "Kewajiban",
+    meaning:
+      "Sesuatu yang harus dilakukan.",
+  },
+  {
+    word: "Menagih",
+    meaning:
+      "Meminta pembayaran yang belum dibayar.",
+  },
+  {
+    word: "Tergesa-gesa",
+    meaning:
+      "Dilakukan dengan terburu-buru.",
+  },
+  {
+    word: "Kemungkinan",
+    meaning:
+      "Peluang sesuatu dapat terjadi.",
+  },
+  {
+    word: "Mencerminkan",
+    meaning:
+      "Menunjukkan atau menggambarkan sesuatu.",
+  },
+];
+
+const storyFiveQuiz: QuizItem[] = [
+  {
+    question: "Apa arti kata sinisme?",
+    options: [
+      "Sikap penuh semangat",
+      "Sikap mengejek dan memandang negatif",
+      "Sikap mudah percaya",
+      "Sikap terlalu malu",
+    ],
+    answer: 1,
+  },
+  {
+    question: "Apa arti bijaksana?",
+    options: [
+      "Ceroboh",
+      "Pandai mengambil keputusan",
+      "Keras kepala",
+      "Takut masalah",
+    ],
+    answer: 1,
+  },
+  {
+    question: "Apa arti relawan pendidikan?",
+    options: [
+      "Pekerja mencari keuntungan",
+      "Membantu pendidikan secara sukarela",
+      "Membuka sekolah",
+      "Penjual buku",
+    ],
+    answer: 1,
+  },
+  {
+    question: "Apa arti tertunggak?",
+    options: [
+      "Dibayar awal",
+      "Belum terselesaikan",
+      "Hilang",
+      "Diperbaiki",
+    ],
+    answer: 1,
+  },
+  {
+    question: "Apa arti potensi?",
+    options: [
+      "Kemampuan berkembang",
+      "Kesalahan besar",
+      "Kelemahan",
+      "Beban hidup",
+    ],
+    answer: 0,
+  },
+];
+
+const storyFive: StoryPack = {
+  isReady: true,
+  vocab: storyFiveVocab,
+  quiz: storyFiveQuiz,
+
+  scenes: {
+    start: {
+      title: "Langkah Raka Menuju Mimpi",
+      image: "/comics/story5/scene1.png",
+      description:
+        "Malam itu Raka berdiri di persimpangan hidup. Di satu sisi ada pekerjaan untuk membantu keluarga, di sisi lain ada sekolah malam yang menyimpan mimpinya. Langkah mana yang akan ia pilih?",
+      vocab: storyFiveVocab,
+      choices: [
+        {
+          text: "A. Menerima pekerjaan tambahan",
+          next: "scene2A",
+        },
+        {
+          text: "B. Tetap mempertahankan sekolah malam",
+          next: "scene2B",
+        },
+      ],
+    },
+
+    /* ======================
+       BABAK 2A
+    ====================== */
+
+    scene2A: {
+      title: "Ejekan Bima",
+      image: "/comics/story5/scene2A.png",
+      description:
+        "Bima merendahkan Raka di tempat kerja.",
+      vocab: storyFiveVocab,
+      choices: [
+        {
+          text: "A. Tetap fokus bekerja",
+          next: "scene3A",
+        },
+        {
+          text: "B. Marah dan berhenti bekerja",
+          next: "scene3B",
+        },
+      ],
+    },
+
+    /* ======================
+       BABAK 3A
+    ====================== */
+
+    scene3A: {
+      title: "Tubuh Mulai Lelah",
+      image: "/comics/story5/scene3A.png",
+      description:
+        "Raka kelelahan setelah bekerja terus-menerus.",
+      vocab: storyFiveVocab,
+      choices: [
+        {
+          text: "a. Tetap bekerja tanpa peduli kesehatan",
+          next: "endingKetikaTubuhBerbicara",
+        },
+        {
+          text: "b. Mencari cara bekerja sambil sekolah",
+          next: "scene4",
+        },
+      ],
+    },
+
+    endingKetikaTubuhBerbicara: {
+      title: "Ketika Tubuh Berbicara",
+      image: "/comics/story5/ending-ketika-tubuh-berbicara.png",
+      summary:
+        "Tubuh memiliki batas. Mengabaikan kesehatan bisa menghentikan mimpi.",
+      vocab: storyFiveVocab,
+      choices: [],
+    },
+
+    /* ======================
+       BABAK 3B
+    ====================== */
+
+    scene3B: {
+      title: "Nasihat Pak Salim",
+      image: "/comics/story5/scene3B.png",
+      description:
+        "Pak Salim menawarkan jalan baru.",
+      vocab: storyFiveVocab,
+      choices: [
+        {
+          text: "a. Mendengarkan nasihat",
+          next: "scene4",
+        },
+        {
+          text: "b. Menolak bantuan",
+          next: "endingJalanPanjang",
+        },
+      ],
+    },
+
+    endingJalanPanjang: {
+      title: "Jalan Panjang",
+      image: "/comics/story5/ending-jalan-panjang.png",
+      summary:
+        "Kadang keras kepala membuat perjalanan terasa lebih berat.",
+      vocab: storyFiveVocab,
+      choices: [],
+    },
+
+    /* ======================
+       BABAK 4
+    ====================== */
+
+    scene4: {
+      title: "Langkah Baru",
+      image: "/comics/story5/scene4.png",
+      description:
+        "Raka kembali sekolah sambil bekerja.",
+      vocab: storyFiveVocab,
+      choices: [
+        {
+          text: "a. Terus berjuang sampai ujian",
+          next: "scene5",
+        },
+        {
+          text: "b. Masa sulit kembali datang",
+          next: "endingKembaliKeMasaSulit",
+        },
+      ],
+    },
+
+    endingKembaliKeMasaSulit: {
+      title: "Ketika Kembali ke Masa Sulit",
+      image: "/comics/story5/ending-kembali-ke-masa-sulit.png",
+      summary:
+        "Setiap pilihan punya konsekuensi. Tidak semua perjuangan berhasil pada percobaan pertama.",
+      vocab: storyFiveVocab,
+      choices: [],
+    },
+
+    /* ======================
+       BABAK 2B
+    ====================== */
+
+    scene2B: {
+      title: "Harapan Baru",
+      image: "/comics/story5/scene2B.png",
+      description:
+        "Ada orang yang percaya pada masa depan Raka.",
+      vocab: storyFiveVocab,
+      choices: [
+        {
+          text: "A. Menerima beasiswa",
+          next: "scene3C",
+        },
+        {
+          text: "B. Menolak beasiswa",
+          next: "scene3D",
+        },
+      ],
+    },
+
+    scene3C: {
+      title: "Motivasi Baru",
+      image: "/comics/story5/scene3C.png",
+      description:
+        "Raka semakin semangat belajar.",
+      vocab: storyFiveVocab,
+      choices: [
+        {
+          text: "Lanjut",
+          next: "scene5",
+        },
+      ],
+    },
+
+    scene3D: {
+      title: "Amplop Alya",
+      image: "/comics/story5/scene3D.png",
+      description:
+        "Alya memberi bantuan diam-diam.",
+      vocab: storyFiveVocab,
+      choices: [
+        {
+          text: "a. Menerima bantuan",
+          next: "scene5",
+        },
+        {
+          text: "b. Mengembalikan amplop",
+          next: "endingJalanPanjang",
+        },
+      ],
+    },
+
+    /* ======================
+       BABAK 5
+    ====================== */
+
+    scene5: {
+      title: "Hari Ujian",
+      image: "/comics/story5/scene5.png",
+      description:
+        "Raka harus memilih antara ujian atau menemani ayahnya.",
+      vocab: storyFiveVocab,
+      choices: [
+        {
+          text: "A. Pergi ujian",
+          next: "endingJejakYangTertinggal",
+        },
+        {
+          text: "B. Menemani ayah",
+          next: "endingKetikaCintaMemilih",
+        },
+      ],
+    },
+
+    endingJejakYangTertinggal: {
+      title: "Jejak yang Tertinggal",
+      image: "/comics/story5/ending-jejak-yang-tertinggal.png",
+      summary:
+        "Perjuangan panjang meninggalkan jejak kesuksesan.",
+      vocab: storyFiveVocab,
+      choices: [],
+    },
+
+    endingKetikaCintaMemilih: {
+      title: "Ketika Cinta Memilih",
+      image: "/comics/story5/ending-ketika-cinta-memilih.png",
+      summary:
+        "Kadang cinta kepada keluarga lebih penting daripada kemenangan pribadi.",
+      vocab: storyFiveVocab,
+      choices: [],
+    },
+  },
+};
+
+
+
+/* =========================================
 EXPORT
 ========================================= */
 
@@ -1069,5 +1464,5 @@ export const storiesData: Record<number, StoryPack> = {
   2: storyTwo,
   3: storyThree,
   4: storyFour,
-  5: dummyStory("Story 5"),
+  5: storyFive,
 };
