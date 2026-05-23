@@ -313,52 +313,57 @@ const storyTwoVocab: VocabItem[] = [
 
 const storyTwoQuiz: QuizItem[] = [
   {
-    question: "Apa arti kata 'penyerang' dalam permainan sepak bola?",
+    question:
+      "Di dalam tim sepak bola Herdi, Neva bertugas sebagai penyerang. Apa yang dimaksud dengan penyerang?",
     options: [
-      "Penjaga gawang",
-      "Pemain depan yang menyerang",
-      "Pemain belakang",
-      "Wasit pertandingan",
+      "Pemain lini depan yang bertugas menyerang dan mencetak gol",
+      "Pemain lini belakang yang menjaga pertahanan gawang",
+      "Orang yang bertugas memimpin pertandingan dan membawa peluit",
+      "Orang yang memberikan instruksi dari pinggir lapangan",
+    ],
+    answer: 0,
+  },
+  {
+    question:
+      "Ojan terkenal sebagai anak yang lincah saat bermain bola. Apa arti dari kata lincah?",
+    options: [
+      "Anak yang pendiam dan jarang bergerak",
+      "Selalu bergerak, tidak bisa diam, serta aktif dan gesit",
+      "Mudah merasa lelah saat berlari di lapangan",
+      "Anak yang memiliki postur tubuh paling tinggi",
     ],
     answer: 1,
   },
   {
-    question: "Apa arti kata 'wasit'?",
+    question:
+      "Ojan mengejek Herdi dengan sebutan lamban. Apa arti dari kata lamban?",
     options: [
-      "Pemain depan",
-      "Penonton pertandingan",
-      "Pemimpin pertandingan",
-      "Pelatih tim",
-    ],
-    answer: 2,
-  },
-  {
-    question: "Apa arti kata 'lincah'?",
-    options: [
-      "Lambat dan malas",
-      "Diam dan tenang",
-      "Aktif dan gesit",
-      "Kasar dan keras",
-    ],
-    answer: 2,
-  },
-  {
-    question: "Apa arti kata 'adil'?",
-    options: [
-      "Memihak salah satu",
-      "Tidak berat sebelah dan berpegang pada kebenaran",
-      "Marah dan kasar",
-      "Diam dan tidak peduli",
+      "Terlalu cepat mengambil keputusan tanpa berpikir",
+      "Tidak cekatan atau lambat dalam gerakan maupun kerja",
+      "Sangat kuat menahan benturan fisik dari lawan",
+      "Pintar menyusun rencana taktik permainan",
     ],
     answer: 1,
   },
   {
-    question: "Apa arti kata 'patah semangat'?",
+    question:
+      "Sikap Herdi membuat teman-temannya menjadi patah semangat dan ingin pulang. Apa arti istilah patah semangat?",
     options: [
-      "Semakin bersemangat",
-      "Hilang keberaniannya; putus asa",
-      "Berlari kencang",
-      "Meminta bantuan",
+      "Mengalami cedera patah tulang kaki saat bermain",
+      "Hilang keberanian, kehilangan gairah berjuang, atau putus asa",
+      "Mendapatkan kekuatan baru setelah istirahat",
+      "Semangat yang menggebu-gebu untuk menang",
+    ],
+    answer: 1,
+  },
+  {
+    question:
+      "Herdi termenung sendirian di bangku lapangan setelah ditinggal pergi. Apa arti kata termenung?",
+    options: [
+      "Tertidur sangat lelap sampai mendengkur",
+      "Diam berpikir-pikir karena merasa sedih, susah, atau menyesal",
+      "Tertawa terbahak-bahak melihat kejadian lucu",
+      "Berlari mondar-mandir karena panik",
     ],
     answer: 1,
   },
@@ -699,42 +704,37 @@ const storyFourVocab: VocabItem[] = [
 
 const storyFourQuiz: QuizItem[] = [
   {
-    question: "Apa arti adaptasi?",
-    options: [
-      "Menghancurkan alam",
-      "Menyesuaikan diri",
-      "Menghindari orang",
-      "Membuat rumah",
-    ],
+    question:
+      "Saat hujan deras turun terus-menerus, air yang mengalir bisa membawa tanah dari bukit yang gundul turun ke bawah. Peristiwa terkikisnya tanah oleh air ini dinamakan...",
+    options: ["Mitigasi", "Generasi", "Erosi", "Adaptasi"],
+    answer: 2,
+  },
+  {
+    question:
+      "Sejak kabut tebal sering turun dan membuat cuaca lebih lembap, warga desa mulai mengubah cara bertani mereka dengan menanam sayuran yang tidak butuh banyak sinar matahari. Proses penyesuaian cara hidup warga agar bisa terus bertahan dengan kondisi alam yang baru ini disebut...",
+    options: ["Erosi", "Adaptasi", "Mitigasi", "Generasi"],
     answer: 1,
   },
   {
-    question: "Apa arti erosi?",
-    options: ["Pengikisan tanah", "Menanam pohon", "Musim hujan", "Permainan"],
+    question:
+      "Di tengah kekhawatiran para tetua desa, sekelompok anak muda dan pelajar justru maju untuk memimpin gotong royong membersihkan jalur air. Kelompok anak muda yang lahir, tumbuh besar, dan memiliki kepedulian yang sama di era kabut ini disebut sebagai sebuah...",
+    options: ["Generasi", "Erosi", "Adaptasi", "Mitigasi"],
     answer: 0,
   },
   {
-    question: "Apa arti generasi?",
-    options: ["Kelompok orang pada masa sama", "Bencana", "Tanah", "Air"],
+    question:
+      "Untuk berjaga-jaga dari ancaman tanah longsor saat hujan deras, warga desa kabut secara mandiri membangun dinding penahan tanah dari bambu dan membuat jalur evakuasi. Berbagai persiapan dan tindakan untuk mengurangi dampak bahaya dari bencana ini dinamakan...",
+    options: ["Mitigasi", "Generasi", "Erosi", "Adaptasi"],
     answer: 0,
   },
   {
-    question: "Apa arti mitigasi?",
+    question:
+      "Mengapa mitigasi penting dilakukan sebelum bencana terjadi?",
     options: [
-      "Mengurangi risiko bencana",
-      "Menambah bahaya",
-      "Membuat hujan",
-      "Menghindari belajar",
-    ],
-    answer: 0,
-  },
-  {
-    question: "Mengapa mitigasi penting?",
-    options: [
-      "Agar lebih aman",
-      "Agar hujan deras",
-      "Agar longsor",
-      "Agar tanah rusak",
+      "Agar warga lebih siap dan aman menghadapi bencana",
+      "Agar hujan semakin deras",
+      "Agar tanah semakin terkikis",
+      "Agar warga tidak perlu bekerja sama",
     ],
     answer: 0,
   },
