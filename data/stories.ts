@@ -1456,6 +1456,302 @@ const storyFive: StoryPack = {
 
 
 /* =========================================
+STORY 6
+========================================= */
+
+const storySixVocab: VocabItem[] = [
+  {
+    word: "Kehebatan",
+    meaning: "Keunggulan atau kemampuan yang luar biasa.",
+  },
+  {
+    word: "Membandingkan",
+    meaning: "Melihat atau menilai sesuatu dengan membandingkannya dengan yang lain.",
+  },
+  {
+    word: "Festival",
+    meaning: "Kegiatan atau acara khusus yang diadakan untuk merayakan sesuatu.",
+  },
+  {
+    word: "Percaya diri",
+    meaning: "Keyakinan terhadap kemampuan dan nilai diri sendiri.",
+  },
+  {
+    word: "Kelebihan",
+    meaning: "Hal yang menjadi keunggulan atau kekuatan seseorang.",
+  },
+];
+
+const storySixQuiz: QuizItem[] = [
+  {
+    question: "Apa arti kata 'kehebatan'?",
+    options: [
+      "Keunggulan atau kemampuan yang luar biasa",
+      "Rasa takut kepada orang lain",
+      "Kebiasaan menghindari teman",
+      "Perasaan sedih karena gagal",
+    ],
+    answer: 0,
+  },
+  {
+    question: "Apa arti kata 'membandingkan'?",
+    options: [
+      "Menyembunyikan sesuatu dari orang lain",
+      "Melihat atau menilai sesuatu dengan membandingkannya dengan yang lain",
+      "Membantu seseorang tanpa diminta",
+      "Menghindari suatu kegiatan",
+    ],
+    answer: 1,
+  },
+  {
+    question: "Apa yang dimaksud dengan 'festival'?",
+    options: [
+      "Tempat tinggal para hewan",
+      "Kegiatan atau acara khusus untuk merayakan sesuatu",
+      "Kegiatan belajar seorang diri",
+      "Perlombaan yang hanya dilakukan di sekolah",
+    ],
+    answer: 1,
+  },
+  {
+    question: "Apa arti 'percaya diri'?",
+    options: [
+      "Takut mencoba sesuatu yang baru",
+      "Selalu merasa lebih hebat dari orang lain",
+      "Keyakinan terhadap kemampuan dan nilai diri sendiri",
+      "Tidak mau menerima bantuan teman",
+    ],
+    answer: 2,
+  },
+  {
+    question: "Apa yang dimaksud dengan 'kelebihan'?",
+    options: [
+      "Hal yang menjadi keunggulan atau kekuatan seseorang",
+      "Kesalahan yang dilakukan seseorang",
+      "Hal yang membuat seseorang merasa sedih",
+      "Kekurangan yang harus disembunyikan",
+    ],
+    answer: 0,
+  },
+];
+
+const storySix: StoryPack = {
+  isReady: true,
+  vocab: storySixVocab,
+  quiz: storySixQuiz,
+
+  scenes: {
+    /* =========================================
+       PEMBUKA
+       ========================================= */
+
+    start: {
+      title: "Luna dan Hutan yang Penuh Warna",
+      image: "/comics/story6/scene1.png",
+      description:
+        "Di sebuah hutan yang sangat indah, hiduplah berbagai macam hewan. Ada yang memiliki bulu indah, ada yang pandai berlari, ada yang bisa memanjat pohon, dan ada juga yang sangat pandai membantu teman. Di antara mereka, tinggal seekor kelinci kecil bernama Luna. Luna adalah kelinci yang baik dan suka membantu.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "Lanjut",
+          next: "scene2",
+        },
+      ],
+    },
+
+    /* =========================================
+       BABAK 1
+       ========================================= */
+
+    scene2: {
+      title: "Kabar dari Bubu",
+      image: "/comics/story6/scene2.png",
+      description:
+        "Suatu pagi, Bubu si burung hantu mengumumkan sebuah kegiatan yang akan diadakan di hutan.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "Lanjut",
+          next: "scene3",
+        },
+      ],
+    },
+
+    /* =========================================
+       BABAK 2
+       ========================================= */
+
+    scene3: {
+      title: "Festival Kehebatan Hutan",
+      image: "/comics/story6/scene3.png",
+      description:
+        "Keesokan harinya, Festival Kehebatan Hutan dimulai. Semua hewan bersiap menunjukkan kemampuan terbaik mereka. Luna mulai memperhatikan kehebatan teman-temannya.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "A. Luna terus membandingkan dirinya dengan teman-temannya dan tidak mengikuti festival",
+          next: "scene3A",
+        },
+        {
+          text: "B. Luna mencoba mencari satu hal yang ia sukai dari dirinya sendiri",
+          next: "scene3B",
+        },
+      ],
+    },
+
+    /* =========================================
+       BABAK 3A
+       JALUR A
+       ========================================= */
+
+    scene3A: {
+      title: "Luna Mulai Meragukan Dirinya",
+      image: "/comics/story6/scene3A.png",
+      description:
+        "Luna terus melihat kemampuan teman-temannya. Ia merasa dirinya tidak sehebat mereka dan mulai meragukan kemampuan dirinya sendiri.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "A1. Luna tetap merasa dirinya tidak cukup baik",
+          next: "scene4A",
+        },
+        {
+          text: "A2. Luna mencoba mengingat hal-hal baik yang pernah ia lakukan",
+          next: "scene4B",
+        },
+      ],
+    },
+
+    /* =========================================
+       BABAK 3B
+       JALUR B
+       ========================================= */
+
+    scene3B: {
+      title: "Menemukan Kebaikan dalam Diri",
+      image: "/comics/story6/scene3B.png",
+      description:
+        "Luna mencoba berhenti membandingkan dirinya dengan teman-temannya. Ia mulai mencari satu hal yang ia sukai dari dirinya sendiri.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "B1. Luna segera membantu Mimi",
+          next: "scene4C",
+        },
+        {
+          text: "B2. Luna merasa dirinya tidak cukup hebat untuk membantu",
+          next: "scene4D",
+        },
+      ],
+    },
+
+    /* =========================================
+       BABAK 4A
+       ========================================= */
+
+    scene4A: {
+      title: "Luna Belajar Menghargai Diri",
+      image: "/comics/story6/scene4A.png",
+      description:
+        "Luna masih merasa dirinya tidak cukup baik. Namun, ia mulai menyadari bahwa setiap hewan memiliki kemampuan dan kelebihan yang berbeda.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "Lanjut",
+          next: "scene5",
+        },
+      ],
+    },
+
+    /* =========================================
+       BABAK 4B
+       ========================================= */
+
+    scene4B: {
+      title: "Mengingat Kebaikan",
+      image: "/comics/story6/scene4B.png",
+      description:
+        "Luna mengingat berbagai hal baik yang pernah ia lakukan untuk teman-temannya. Ia mulai menyadari bahwa membantu dan peduli kepada orang lain juga merupakan sebuah kelebihan.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "Lanjut",
+          next: "scene5",
+        },
+      ],
+    },
+
+    /* =========================================
+       BABAK 4C
+       ========================================= */
+
+    scene4C: {
+      title: "Luna Membantu Mimi",
+      image: "/comics/story6/scene4C.png",
+      description:
+        "Luna memilih untuk membantu Mimi. Ia menyadari bahwa kemampuannya untuk peduli dan membantu teman juga merupakan sesuatu yang berharga.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "Lanjut",
+          next: "scene5",
+        },
+      ],
+    },
+
+    /* =========================================
+       BABAK 4D
+       ========================================= */
+
+    scene4D: {
+      title: "Luna Masih Ragu",
+      image: "/comics/story6/scene4D.png",
+      description:
+        "Luna merasa dirinya tidak cukup hebat untuk membantu. Namun, perlahan ia belajar bahwa seseorang tidak harus menjadi yang paling hebat untuk dapat memberikan kebaikan kepada orang lain.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "Lanjut",
+          next: "scene5",
+        },
+      ],
+    },
+
+    /* =========================================
+       BABAK 5
+       ========================================= */
+
+    scene5: {
+      title: "Setiap Diri Memiliki Keistimewaan",
+      image: "/comics/story6/scene5.png",
+      description:
+        "Luna akhirnya memahami bahwa setiap hewan memiliki kelebihan masing-masing. Ia tidak perlu menjadi seperti teman-temannya untuk menjadi berharga.",
+      vocab: storySixVocab,
+      choices: [
+        {
+          text: "Lanjut",
+          next: "epilog",
+        },
+      ],
+    },
+
+    /* =========================================
+       EPILOG
+       ========================================= */
+
+    epilog: {
+      title: "Luna Menemukan Kehebatannya",
+      image: "/comics/story6/epilog.png",
+      summary:
+        "Luna belajar bahwa setiap orang memiliki kelebihan dan keistimewaan masing-masing. Kita tidak perlu terus membandingkan diri dengan orang lain. Dengan menghargai diri sendiri dan menggunakan kemampuan yang dimiliki untuk membantu sesama, kita dapat menemukan arti kehebatan yang sebenarnya.",
+      vocab: storySixVocab,
+      choices: [],
+    },
+  },
+};
+
+
+/* =========================================
 EXPORT
 ========================================= */
 
@@ -1465,4 +1761,5 @@ export const storiesData: Record<number, StoryPack> = {
   3: storyThree,
   4: storyFour,
   5: storyFive,
+  6: storySix,
 };
