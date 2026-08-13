@@ -1456,86 +1456,197 @@ const storyFive: StoryPack = {
 
 
 /* =========================================
-STORY 6
+STORY 6 - LUNA DAN HUTAN YANG PENUH WARNA
 ========================================= */
 
 const storySixVocab: VocabItem[] = [
   {
-    word: "Kehebatan",
-    meaning: "Keunggulan atau kemampuan yang luar biasa.",
-  },
-  {
     word: "Membandingkan",
-    meaning: "Melihat atau menilai sesuatu dengan membandingkannya dengan yang lain.",
-  },
-  {
-    word: "Festival",
-    meaning: "Kegiatan atau acara khusus yang diadakan untuk merayakan sesuatu.",
+    meaning: "Menyamakan dua hal untuk melihat perbedaannya.",
   },
   {
     word: "Percaya diri",
-    meaning: "Keyakinan terhadap kemampuan dan nilai diri sendiri.",
+    meaning: "Yakin terhadap kemampuan diri sendiri.",
+  },
+  {
+    word: "Indah",
+    meaning: "Cantik; elok; sangat bagus.",
+  },
+  {
+    word: "Lincah",
+    meaning: "Gesit; aktif dan selalu bergerak.",
+  },
+  {
+    word: "Sabar",
+    meaning: "Mampu menunggu dan menghadapi sesuatu dengan tenang.",
+  },
+  {
+    word: "Bijaksana",
+    meaning: "Mampu berpikir dan mengambil keputusan dengan baik.",
+  },
+  {
+    word: "Membantu",
+    meaning: "Menolong; memberi bantuan kepada sesama.",
+  },
+  {
+    word: "Gugup",
+    meaning: "Merasa tidak nyaman atau cemas.",
+  },
+  {
+    word: "Kepedulian",
+    meaning: "Perhatian dan rasa ingin membantu orang lain.",
   },
   {
     word: "Kelebihan",
-    meaning: "Hal yang menjadi keunggulan atau kekuatan seseorang.",
+    meaning: "Keunggulan atau kekuatan yang dimiliki seseorang.",
+  },
+  {
+    word: "Menyadari",
+    meaning: "Mengetahui atau meyakini suatu hal.",
+  },
+  {
+    word: "Iri",
+    meaning: "Merasa ingin memiliki kelebihan yang dimiliki orang lain.",
+  },
+  {
+    word: "Istimewa",
+    meaning: "Khusus; berbeda dari yang lain karena keunggulannya.",
+  },
+  {
+    word: "Menghargai",
+    meaning: "Menghormati atau menilai tinggi suatu hal.",
   },
 ];
 
 const storySixQuiz: QuizItem[] = [
   {
-    question: "Apa arti kata 'kehebatan'?",
+    question:
+      "Dalam cerita, Luna sering membandingkan dirinya dengan hewan lain. Apa makna kata membandingkan?",
     options: [
-      "Keunggulan atau kemampuan yang luar biasa",
-      "Rasa takut kepada orang lain",
-      "Kebiasaan menghindari teman",
-      "Perasaan sedih karena gagal",
+      "Menyamakan dua hal untuk melihat perbedaannya",
+      "Menjauhkan diri dari orang lain",
+      "Meniru semua yang dilakukan orang lain",
+      "Memuji diri sendiri",
     ],
     answer: 0,
   },
   {
-    question: "Apa arti kata 'membandingkan'?",
+    question:
+      "Piko memiliki bulu yang indah dan percaya diri. Arti kata percaya diri adalah ....",
     options: [
-      "Menyembunyikan sesuatu dari orang lain",
-      "Melihat atau menilai sesuatu dengan membandingkannya dengan yang lain",
-      "Membantu seseorang tanpa diminta",
-      "Menghindari suatu kegiatan",
+      "Takut mencoba sesuatu",
+      "Yakin terhadap kemampuan diri sendiri",
+      "Selalu mengikuti teman",
+      "Tidak peduli kepada orang lain",
     ],
     answer: 1,
   },
   {
-    question: "Apa yang dimaksud dengan 'festival'?",
+    question: "Sinonim dari kata indah adalah ....",
+    options: ["Buruk", "Cantik", "Lambat", "Sulit"],
+    answer: 1,
+  },
+  {
+    question: "Mimi dikenal sebagai hewan yang lincah. Sinonim kata lincah adalah ....",
+    options: ["Gesit", "Lambat", "Diam", "Lemah"],
+    answer: 0,
+  },
+  {
+    question:
+      "Toto berjalan lambat, tetapi ia sangat sabar. Apa makna kata sabar?",
     options: [
-      "Tempat tinggal para hewan",
-      "Kegiatan atau acara khusus untuk merayakan sesuatu",
-      "Kegiatan belajar seorang diri",
-      "Perlombaan yang hanya dilakukan di sekolah",
+      "Mudah marah",
+      "Mampu menunggu dan menghadapi sesuatu dengan tenang",
+      "Selalu ingin menang",
+      "Tidak mau membantu",
     ],
     answer: 1,
   },
   {
-    question: "Apa arti 'percaya diri'?",
+    question: "Bubu adalah hewan yang bijaksana. Makna kata bijaksana adalah ....",
     options: [
-      "Takut mencoba sesuatu yang baru",
-      "Selalu merasa lebih hebat dari orang lain",
-      "Keyakinan terhadap kemampuan dan nilai diri sendiri",
-      "Tidak mau menerima bantuan teman",
-    ],
-    answer: 2,
-  },
-  {
-    question: "Apa yang dimaksud dengan 'kelebihan'?",
-    options: [
-      "Hal yang menjadi keunggulan atau kekuatan seseorang",
-      "Kesalahan yang dilakukan seseorang",
-      "Hal yang membuat seseorang merasa sedih",
-      "Kekurangan yang harus disembunyikan",
+      "Mampu berpikir dan mengambil keputusan dengan baik",
+      "Suka menyalahkan orang lain",
+      "Selalu ingin menjadi pemenang",
+      "Tidak mau mendengarkan teman",
     ],
     answer: 0,
+  },
+  {
+    question: "Sinonim dari kata membantu adalah ....",
+    options: ["Menolong", "Mengganggu", "Meninggalkan", "Menghindari"],
+    answer: 0,
+  },
+  {
+    question:
+      "Luna merasa gugup ketika mendengar teman-temannya menyebutkan kemampuan mereka. Apa arti kata gugup?",
+    options: [
+      "Sangat tenang",
+      "Merasa tidak nyaman atau cemas",
+      "Sangat bahagia",
+      "Merasa bangga",
+    ],
+    answer: 1,
+  },
+  {
+    question:
+      "Luna memiliki kepedulian terhadap teman-temannya. Makna kata kepedulian adalah ....",
+    options: [
+      "Sikap tidak memperhatikan orang lain",
+      "Perhatian dan rasa ingin membantu orang lain",
+      "Keinginan untuk menjadi lebih hebat",
+      "Sikap suka membandingkan diri",
+    ],
+    answer: 1,
+  },
+  {
+    question: "Sinonim dari kata kelebihan adalah ....",
+    options: ["Kekurangan", "Keunggulan", "Kesalahan", "Kelelemahan"],
+    answer: 1,
+  },
+  {
+    question:
+      "Luna mulai menyadari bahwa dirinya juga memiliki banyak kelebihan. Sinonim kata menyadari adalah ....",
+    options: ["Mengetahui", "Melupakan", "Menghindari", "Menyembunyikan"],
+    answer: 0,
+  },
+  {
+    question:
+      "Bubu memberikan nasihat kepada Luna dengan cara yang bijaksana. Kata bijaksana memiliki makna yang paling dekat dengan ....",
+    options: [
+      "Ceroboh dalam bertindak",
+      "Pandai mengambil keputusan dengan tepat",
+      "Suka memaksakan kehendak",
+      "Mudah menyerah",
+    ],
+    answer: 1,
+  },
+  {
+    question:
+      "Luna merasa iri ketika melihat bulu Piko yang indah. Apa makna kata iri?",
+    options: [
+      "Merasa senang melihat keberhasilan orang lain",
+      "Merasa ingin memiliki kelebihan yang dimiliki orang lain",
+      "Merasa bangga terhadap diri sendiri",
+      "Merasa kasihan kepada orang lain",
+    ],
+    answer: 1,
+  },
+  {
+    question:
+      "Sinonim kata istimewa dalam kalimat 'Setiap makhluk memiliki keistimewaannya sendiri' adalah ....",
+    options: ["Biasa", "Khusus", "Lemah", "Sama"],
+    answer: 1,
+  },
+  {
+    question:
+      "Dalam cerita, Luna belajar untuk menghargai dirinya sendiri. Sinonim kata menghargai adalah ....",
+    options: ["Meremehkan", "Menghormati", "Menghindari", "Membandingkan"],
+    answer: 1,
   },
 ];
 
-const storySix: StoryPack = {
+export const storySix: StoryPack = {
   isReady: true,
   vocab: storySixVocab,
   quiz: storySixQuiz,
