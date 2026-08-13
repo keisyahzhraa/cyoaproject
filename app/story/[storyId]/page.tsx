@@ -103,11 +103,15 @@ export default function StoryPage({ params }: Props) {
     }
   };
 
+  /* PERHITUNGAN BINTANG FLEKSIBEL (BERBASIS PERSENTASE) */
+  const totalQuestions = story.quiz.length;
+  const percentage = totalQuestions > 0 ? (score / totalQuestions) * 100 : 0;
+
   const stars =
-    score >= 5 ? 5 :
-    score >= 4 ? 4 :
-    score >= 3 ? 3 :
-    score >= 2 ? 2 : 1;
+    percentage >= 80 ? 5 :
+    percentage >= 60 ? 4 :
+    percentage >= 40 ? 3 :
+    percentage >= 20 ? 2 : 1;
 
   const reset = () => {
     setScene("start");
@@ -289,10 +293,10 @@ export default function StoryPage({ params }: Props) {
         {/* RESULT */}
         {quizDone && (
           <div className="bg-white p-10 rounded-3xl shadow text-center">
-            <Trophy className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20" />
+            <Trophy className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mx-auto text-yellow-500 mb-4" />
 
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black">
-              Score {score}/5
+              Score {score}/{story.quiz.length}
             </h2>
 
             <div className="text-3xl my-4">
@@ -303,7 +307,7 @@ export default function StoryPage({ params }: Props) {
 
             <Link
               href="/cerita"
-              className="inline-block mt-6 bg-green-500 text-white px-8 py-4 rounded-2xl"
+              className="inline-block mt-6 bg-green-500 text-white px-8 py-4 rounded-2xl font-bold"
             >
               Kembali
             </Link>
@@ -329,7 +333,7 @@ export default function StoryPage({ params }: Props) {
 
               <button
                 onClick={() => setShowVocab(false)}
-                className="mt-6 w-full bg-blue-500 text-white py-4 rounded-xl"
+                className="mt-6 w-full bg-blue-500 text-white py-4 rounded-xl font-bold"
               >
                 Tutup
               </button>
